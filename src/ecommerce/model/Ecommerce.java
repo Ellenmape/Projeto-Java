@@ -2,69 +2,51 @@ package ecommerce.model;
 
 public abstract class Ecommerce {
 	private String produto;
-	private String cliente;
-	private String email;
-	private String telefone;
-	private int pedido;
+	private String cor;
 	private int codigoItem;
-	private float valor;
 	
-	public Ecommerce(String produto, String cliente, String email, String telefone, int pedido, int codigoItem,
-			float valor) {
+	
+	public Ecommerce(String produto, String cor, int codigoItem) {
 		super();
 		this.produto = produto;
-		this.cliente = cliente;
-		this.email = email;
-		this.telefone = telefone;
-		this.pedido = pedido;
+		this.cor = cor;
 		this.codigoItem = codigoItem;
-		this.valor = valor;
 	}
+
+
 	public String getProduto() {
 		return produto;
 	}
+
 	public void setProduto(String produto) {
 		this.produto = produto;
 	}
-	public String getCliente() {
-		return cliente;
+
+
+	public String getCor() {
+		return cor;
 	}
-	public void setCliente(String cliente) {
-		this.cliente = cliente;
+
+
+	public void setCor(String cor) {
+		this.cor = cor;
 	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getTelefone() {
-		return telefone;
-	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
-	public int getPedido() {
-		return pedido;
-	}
-	public void setPedido(int pedido) {
-		this.pedido = pedido;
-	}
+
+
 	public int getCodigoItem() {
 		return codigoItem;
 	}
+
+
 	public void setCodigoItem(int codigoItem) {
 		this.codigoItem = codigoItem;
 	}
-	public float getValor() {
-		return valor;
-	}
-	public void setValor(float valor) {
-		this.valor = valor;
-	}
-	
-	public void visualizar() {
 
+	public void visualizar(){
+		System.out.println("**************************");
+		System.out.println("Produto: " + this.produto);
+		System.out.println("Cor: " + this.cor);
+		System.out.println("Código: " + this.codigoItem);	    
 		}
 		
 }
