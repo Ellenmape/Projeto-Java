@@ -32,8 +32,8 @@ public class Menu {
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("            1 - Cadastrar Item                        ");
-			System.out.println("            2 - Listar Itens               	         ");
+			System.out.println("            1 - Cadastrar Item                       ");
+			System.out.println("            2 - Listar Itens               	     ");
 			System.out.println("            3 - Buscar Código do Item                ");
 			System.out.println("            4 - Atualizar Dados de Cadastro          ");
 			System.out.println("            5 - Excluir Item                         ");
